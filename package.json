@@ -1,0 +1,23 @@
+{
+  "name": "websocketify",
+  "version": "0.1.0",
+  "description": "Node.js port of websocketd. Turns any program into a WebSocket server.",
+  "main": "index.js",
+  "bin": {
+    "websocketify": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocketd",
+    "websocket",
+    "daemon"
+  ],
+  "author": "Sean Micklethwaite",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "ws": "^0.7.2"
+  }
+}
