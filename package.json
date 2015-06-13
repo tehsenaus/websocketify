@@ -1,6 +1,6 @@
 {
   "name": "websocketify",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Node.js port of websocketd. Turns any program into a WebSocket server.",
   "main": "index.js",
   "bin": {
