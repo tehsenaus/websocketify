@@ -6,8 +6,8 @@ var WebSocket = require('ws');
 var program = require('commander')
 	.command('websocketify <program> [args...]')
 	.version(require('./package.json').version)
-	.option('-p, --port', 'Port to listen on')
-	.option('--address', 'Address to bind on')
+	.option('-p, --port <port>', 'Port to listen on')
+	.option('--address <addr>', 'Address to bind on')
 	.option('--singleton', 'Share a single instance of the process between all clients')
 	.option('--devconsole', 'Expose dev console')
 	.parse(process.argv);
@@ -96,4 +96,4 @@ if ( program.args.length > 0 ) {
 	});
 }
 
-server.listen(program.port || 8080, process.address || '0.0.0.0');
+server.listen(parseInt(program.port || 8080), process.address || '0.0.0.0');
